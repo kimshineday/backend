@@ -5,13 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb94c7f4-6fb7-4615-8327-dd509b988785" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore/.idea/backend.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Git/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Git/1일차.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Git/1일차_.png" afterDir="false" />
@@ -30,18 +23,7 @@
       <change afterPath="$PROJECT_DIR$/Git/oz_fullstack.yaml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Git/oz_market.yaml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Git/oz_service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python/Chapter21-32/Ch21_task.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python/Chapter21-32/Ch22_task.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python/Chapter21-32/Ch23_task.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python/Chapter21-32/Ch24_task.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python/Chapter21-32/Ch25_task.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python/Chapter21-32/Ch26_task.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python/Chapter21-32/Ch27_task.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python/Chapter21-32/Ch28_task.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python/Chapter21-32/Ch29_task.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python/Chapter21-32/Ch30_task.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python/Chapter21-32/Ch31_task.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python/Chapter21-32/Ch32_task.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +77,7 @@
       <updated>1745380595462</updated>
       <workItem from="1745380597048" duration="1120000" />
       <workItem from="1745392511652" duration="1559000" />
-      <workItem from="1745402709943" duration="16971000" />
+      <workItem from="1745402709943" duration="20099000" />
     </task>
     <servers />
   </component>
