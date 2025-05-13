@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <title>설문조사</title>
+    </head>
+    <body>
+        <header>
+            <h1>설문조사</h1>
+            모든 항목에 빠짐없이 답변을 남겨주세요&#9786;
+        </header>
+        <hr>
+        <main>
+            <form>
+                <fieldset><!--개인정보-->
+                    <legend>개인정보</legend>
+                    <label for="name">이름</label>
+                    <input type="text" id="name" placeholder="이름 입력해주세요&#9786;" name="name">
+                    <br>
+                    <label for="email">메일주소</label>
+                    <input type="email" id="name" placeholder="메일 입력해주세요&#9786;" name="email">
+                    <br>
+                    <p>나이를 입력하세요</p>
+                    <input type="radio" id="teen" name="age">
+                    <label for="teen">10대</label>
+                    <input type="radio" id="twenty" name="age">
+                    <label for="twenty">20대</label>
+                    <input type="radio" id="thirty" name="age">
+                    <label for="thirty">30대</label>
+                    <input type="radio" id="fourty" name="age">
+                    <label for="fourty">40대</label>
+                    <input type="radio" id="fifty" name="age">
+                    <label for="fifty">50대</label>
+                    <input type="radio" id="other" name="age">
+                    <label for="other">그외</label>
+                </fieldset>
+                <fieldset><!--설문-->
+                    <legend>설문</legend>
+                    <h4>1. 백엔드 부트캠프 커리큘럼 중 기대되는 파트</h4>
+                    <textarea rows="3" cols="30" name="expectation"> &#9786;자유롭게 남겨주세요&#9786;</textarea>
+
+                    <h4>2. 지금까지 들었던 수업들 중 재밌었던 파트</h4>
+                    <input type="checkbox" id="linux" name="INTERESTED">
+                    <label for="linux">1.Linux</label>
+                    <input type="checkbox" id="github" name="INTERESTED">
+                    <label for="github">2.Git,GitHub</label>
+                    <input type="checkbox" id="python" name="INTERESTED">
+                    <label for="python">3.Python</label>
+                    <input type="checkbox" id="database" name="INTERESTED">
+                    <label for="database">4.Database</label>
+                    <input type="checkbox" id="html_css" name="INTERESTED">
+                    <label for="html_css">5.HTML-CSS</label>
+
+                    <h4>3. 지금까지 들었던 수업들 중 어려웠던 파트</h4>
+                    <input type="checkbox" id="linux" name="difficult">
+                    <label for="linux">1.Linux</label>
+                    <input type="checkbox" id="github" name="difficult">
+                    <label for="github">2.Git,GitHub</label>
+                    <input type="checkbox" id="python" name="difficult">
+                    <label for="python">3.Python</label>
+                    <input type="checkbox" id="database" name="difficult">
+                    <label for="database">4.Database</label>
+                    <input type="checkbox" id="html_css" name="difficult">
+                    <label for="html_css">5.HTML-CSS</label>
+                    
+                    <h4>4. 기존의 커리큘럼 외 관심 있는 분야는?</h4>
+                    <textarea rows="3" cols="30" name="expectation"> &#9786;자유롭게 남겨주세요&#9786;</textarea>
+
+
+                </fieldset>
+                <fieldset><!--기타의견-->
+                    <legend>기타 의견</legend>
+                    <textarea rows="3" cols="30" name="comment"> 그 외 의견들을 자유롭게 남겨주세요&#9786;</textarea>
+                </fieldset>
+                <input type="submit">
+            </form>
+        </main>
+        <hr>
+        <footer>설문에 응해주셔서 감사합니다.&#9786;</footer>
+    </body>
+</html>
