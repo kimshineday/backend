@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 전체적인 셋팅 */
+*{
+    box-sizing: border-box;
+    font-family: 'DungGeunMo';
+}
+
+html{
+    height: 100%; /*화면을 꽉채워 사용*/
+}
+
+body{ 
+    height: 100%;
+    margin: 0; /*기본적으로 마진이 있음, 이를 제거. 0px 일경우 단위 생략 가능*/
+}
+
+.container{
+    height: 100%;
+    background-color: antiquewhite;
+}
+
+/* 스크린 크기 조정 main*/
+.chat-screen{ /*채팅 입력창을 제외한 나머지 부분을 의도적으로 표현*/
+    height: calc(100% - 120px); /*채팅 입력창을 제외한 나머지 부분을 의도적으로 표현*/
+}
+
+/*유저 정보 표시되는 부분(상단)*/
+.user {
+    background-color: blanchedalmond;
+    padding: 16px;
+    height: 85px;
+}
+
+.user_column{
+    float: left;
+}
+
+.user_pic{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+.user_nick, .user_count{
+    margin: 5px;
+}
+
+.user_count{
+    font-size: 18px;
+    color: gray;
+}
+
+/*채팅 입력 창*/
+.chat-form{
+    height: 120px;
+    background-color: blanchedalmond;
+}
+
+.chat-form_msg{
+    width: calc(100% - 120px);
+    height: 120px;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    resize: none;
+}
+
+.chat-form_bt{
+    float: right;
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    background-color: bisque;
+    font-size: 18px;
+}
+
+.chat-form_bt:active{ /*전송 버튼 눌렀을때의 색깔*/
+    background-color: blanchedalmond;
+}
+
+.chat-form_msg:focus{
+    outline: none;
+}

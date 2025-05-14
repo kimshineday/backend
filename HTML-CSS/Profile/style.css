@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    
+}
+
+html{
+    background-color: black;
+    color: aliceblue;
+    font-family: 'DungGeunMo';
+    text-align: center;
+    font-size: 25px;
+}
+
+h1{
+    font-size: 60px;
+    text-align: center;
+}
+
+img{
+    margin-right: 5%;
+    max-width: 450px;
+    min-width: auto;
+}
+
+div.top{ /* 이미지와 기본 프로필 내용을 2열로 정렬 */
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center; /*중앙정렬*/
+}
+
+h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+#profile{
+
+    font-size: 35px;
+    max-width: auto;
+    text-align: left;
+}
+    h2#profile{
+        text-align: center;
+    }
+
+#stats{
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+}
+
+.skills_1{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center; /*중앙정렬*/
+}
+
+    #skill_music{
+        margin-right: 2.5%;
+    }
+    #skill_coding{
+        margin-left: 2.5%;
+    }
