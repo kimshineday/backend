@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="name"> </h1>
+    <p id="hobby"></p>
+    <p id="song"></p>
+    <p id="animal"></p>
+    <p id="fruit"></p>
+
+    <script>
+        
+        const nameElement = document.querySelector("#name") // HTML 문서에서 CSS 선택자를 활용, 가져옴
+        let name = prompt("당신의 이름은?")
+        nameElement.textContent = name
+
+        const hobbyElement = document.querySelector("#hobby")
+        let hobby = prompt("당신의 취미는?")
+        hobbyElement.textContent = `취미는 ${hobby}입니다.`
+
+        document.querySelector("#song").textContent = `좋아하는 곡은 ${prompt("좋아하는 곡은?")}입니다.`
+
+        // 과제
+        const animalElement = document.querySelector("#animal")
+        let animal = prompt("좋아하는 동물은?")
+        animalElement.textContent = `좋아하는 동물은 ${animal}입니다.`
+
+        document.querySelector("#fruit").textContent = `좋아하는 과일은 ${prompt("좋아하는 과일은?")}입니다.`
+        // HTML 문서에서 id 값을 그대로 가져와 바로 변수 값을 할당.'prompt'로 바로 입력 받음과 동시에 출력.
+    </script>
+</body>
+</html>
