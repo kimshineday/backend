@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'boards.apps.BoardsConfig' # 등록
+    'users.apps.UsersConfig' # 등록
 ]
 
 MIDDLEWARE = [

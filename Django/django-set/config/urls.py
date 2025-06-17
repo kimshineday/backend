@@ -15,8 +15,16 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+# from feeds import views # feeds 불러오기
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # path("feeds/", views.show_feed), # feeds 라는 url 접근시 show_feed 함수 실행
+    # path("feeds/all", views.all_feed),
+    # path("feeds/<int:feed_id>/<str:feed_content>", views.one_feed)
+    
+    # -> 내용이 많아지면서 관리가 어려워짐. 중복 되는 부분을 묶어주는 것.
+    path("feeds/", include("feeds.urls")) # feeds 등록
 ]
+# 잘못된 접근을 막아줄 수 있는.
