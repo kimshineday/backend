@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'boards.apps.BoardsConfig' # 등록
-    'users.apps.UsersConfig' # 등록
+    'users.apps.UsersConfig', # 등록
+    'articles.apps.ArticlesConfig', # boards 대체
 ]
 
 MIDDLEWARE = [
@@ -122,3 +122,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL = 'users.User' # 셋팅한 user model 사용 등록
