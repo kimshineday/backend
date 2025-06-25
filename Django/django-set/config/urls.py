@@ -25,6 +25,11 @@ urlpatterns = [
     # path("feeds/<int:feed_id>/<str:feed_content>", views.one_feed)
     
     # -> 내용이 많아지면서 관리가 어려워짐. 중복 되는 부분을 묶어주는 것.
-    path("feeds/", include("feeds.urls")) # feeds 등록
+    # path("feeds/", include("feeds.urls")) # feeds 등록
+    
+    # API 코드 제작
+    # path('api/v1/users', include('users.urls')),
+    path('api/v1/feeds/', include('feeds.urls')),
+    # path('api/v1/reviews', include('reviews.urls'))
 ]
 # 잘못된 접근을 막아줄 수 있는.

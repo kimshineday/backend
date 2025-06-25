@@ -9,6 +9,8 @@ class Article(CommonModel):
     date = models.DateTimeField(auto_now=True)
     likes = models.PositiveIntegerField(default=0)
     reviews = models.PositiveIntegerField(default=0)
+
+    user = models.ForeignKey('users.User', on_delete=models.CASCADE) # 테이블 연결, 유저 데이터 삭제 되면 글도 삭제하는지.
     
     def __str__(self):
         return self.title
