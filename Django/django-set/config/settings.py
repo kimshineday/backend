@@ -43,6 +43,7 @@ CUSTOM_USER_APPS = [
     'users.apps.UsersConfig', # 등록
     'articles.apps.ArticlesConfig', # boards 대체
     'feeds.apps.FeedsConfig',
+    'reviews.apps.ReviewsConfig',
     'rest_framework',
 ]
 

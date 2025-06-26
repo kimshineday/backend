@@ -27,6 +27,19 @@ class Feeds(APIView):
 
         return Response(serializer.data)
     
+    def post(self, request):
+        # Feed.objects.create() # 시리얼라이저에서 구현
+        # 역직렬화 (클라이언트가 보내준 Json -> object)
+        serializer = FeedSerializer(data=request.data)
+        if serializer.is_valid(): # 토큰 인증
+            feed = serializer.save(user=request.user)
+            serializer = FeedSerializer(feed)
+            # print('post serializer'. serializer) # 로그 기록 남기기 -> 오류 있음
+
+            return Response(serializer.data)
+        else:
+            return Response(serializer.errors)
+    
 class FeedDetail(APIView):
     def get_object(self, feed_id):
         try:

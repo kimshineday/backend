@@ -1,6 +1,11 @@
 from rest_framework.serializers import ModelSerializer
 from .models import User
 
+class MyInfoUserSerializer(ModelSerializer):
+    class Meta:
+        model = User
+        fields = '__all__'
+
 # Feed에서 노출 시킬 정보들.
 class FeedUserSerializer(ModelSerializer):
     class Meta:
