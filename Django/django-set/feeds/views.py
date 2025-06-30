@@ -50,7 +50,7 @@ class FeedDetail(APIView):
         feed = self.get_object(feed_id)
         # feed는 현재 object, -> json -> Serialier
         serializer = FeedSerializer(feed)
-        print(serializer)
+        # print(serializer)
 
         return Response(serializer.data)
     

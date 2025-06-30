@@ -10,6 +10,6 @@ urlpatterns = [
 """
 
 urlpatterns = [
-    path('', views.Feeds.as_view()),
-    path('<int:feed_id>', views.FeedDetail.as_view()),
+    path('', views.Feeds.as_view(), name='all_feeds'), # 이름 지정
+    path('<int:feed_id>', views.FeedDetail.as_view(), name='user_feed'), # 이름 지정
 ]
