@@ -45,6 +45,7 @@ CUSTOM_USER_APPS = [
     'feeds.apps.FeedsConfig',
     'reviews.apps.ReviewsConfig',
     'rest_framework',
+    'rest_framework.authtoken',
 ]
 
 INSTALLED_APPS = DJANGO_SYSTEM_APPS + CUSTOM_USER_APPS
@@ -133,3 +134,10 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'users.User' # 셋팅한 user model 사용 등록
+
+# 토믄 설정
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication', # 추가
+    ],
+}
