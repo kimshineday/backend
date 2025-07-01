@@ -6,11 +6,15 @@ from rest_framework import status
 from django.urls import reverse
 from .models import Feed
 from users.models import User
+from rest_framework_simplejwt.tokens import RefreshToken
 
 class FeedAPITestCase(APITestCase):
     # 각 테스트 메서드가 실행되는지 확인
-    def setUp(self):
+    def setUp(self): # 유저 생성과 토큰
         self.user = User.objects.create_user(username='testuser', password='xptmxm@00')
+        refresh = RefreshToken.for_user(self.user)
+        self.token = str(refresh.access_token)
+        self.client.credentials(HTTP_AUTHORIZATION='Bearer {self.token}')
 
         self.feed1 = Feed.objects.create(user=self.user, title = 'Title1')
         self.feed2 = Feed.objects.create(user=self.user, title = 'Title1')
@@ -42,7 +46,6 @@ class FeedAPITestCase(APITestCase):
 
         self.assertEqual(res.status_code, status.HTTP_201_CREATED)
         self.assertEqual(Feed.objects.count(), 3) # 게시글 수가 3개
-
 
         self.assertEqual(Feed.objects.latest('id').content, 'New Feed') # 가장 최신 글
 
